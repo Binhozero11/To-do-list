@@ -1,0 +1,129 @@
+@media (max-width: 1200px) {
+    form h1 {
+        font-size: 2.5rem;
+        padding: 5px 20px;
+    }
+
+    form input {
+        width: 70%;
+        max-width: 500px;
+    }
+
+    ul li {
+        width: 90%;
+        max-width: 900px;
+    }
+
+    ul li {
+        flex-wrap: wrap;
+    }
+
+    li textarea {
+        min-width: 100%;
+    }
+
+    li button {
+        margin: auto;
+    }
+
+}
+
+@media (max-width: 768px) {
+    main {
+        margin-top: 40px;
+    }
+
+    form {
+        padding-top: 20px;
+    }
+
+    form h1 {
+        font-size: 2.2rem;
+    }
+
+    form .camposDeEntrada {
+        padding-top: 20px;
+    }
+
+    form input {
+        padding: 14px;
+    }
+
+    form button {
+        padding: 14px;
+    }
+
+    ul {
+        gap: 10px;
+    }
+
+    ul li {
+        width: 95%;
+        padding: 15px 10px;
+        gap: 15px;
+    }
+
+    li textarea {
+        font-size: 1.1rem;
+    }
+
+    li button {
+        padding: 15px 20px;
+        font-size: 0.9rem;
+        max-height: 65px;
+        max-width: 88px;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 480px) {
+    main {
+        margin-top: 20px;
+    }
+
+    form h1 {
+        font-size: 2rem;
+    }
+
+    form .camposDeEntrada {
+        padding-top: 15px;
+    }
+
+    form input {
+        width: 100%;
+    
+        font-size: 0.9rem;
+    
+        margin: 15px 0 20px 0;
+    }
+
+    form button {
+        padding: 14px 25px;
+        font-size: 0.9rem;
+        margin-bottom: 25px;
+    }
+
+    ul {
+        gap: 20px;
+    }
+
+    li textarea {
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+
+    li textarea:focus {
+        padding: 5px 10px;
+    }
+
+    li button {
+        font-size: 0.8rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        padding: 30px 10px;
+    }
+}
