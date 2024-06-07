@@ -77,7 +77,7 @@ function animacaoDoBotao() {
 
 function animacaoTextoJaExistente() {
     const animationbuttonForm = document.querySelector("form div button")
-    const mensagemDeErro = document.getElementById("mensagemDeErro")
+    const mensagemDeErro = document.getElementById("mensagemErro")
 
 
     animationbuttonForm.classList.add("tarefaVazia")
