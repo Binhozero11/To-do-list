@@ -77,22 +77,17 @@ function animacaoDoBotao() {
 
 function animacaoTextoJaExistente() {
     const animationbuttonForm = document.querySelector("form div button")
+    const mensagemDeErro = document.getElementById("mensagemDeErro")
+
 
     animationbuttonForm.classList.add("tarefaVazia")
-    mensagemDeErroDisplayBlock()
+    mensagemDeErro.style.display = "block"
 
     animationbuttonForm.addEventListener("animationend", () => {
         animationbuttonForm.classList.remove("tarefaVazia")
-        mensagemDeErroDisplayNone()
+        mensagemDeErro.style.display = "none"
+}
     })
-}
-
-function mensagemDeErroDisplayBlock() {
-    mensagemDeErro.style.display = "block"
-}
-
-function mensagemDeErroDisplayNone() {
-    mensagemDeErro.style.display = "none"
 }
 
 function addTasks() {
