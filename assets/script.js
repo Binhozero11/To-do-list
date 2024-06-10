@@ -86,7 +86,6 @@ function animacaoTextoJaExistente() {
     animationbuttonForm.addEventListener("animationend", () => {
         animationbuttonForm.classList.remove("tarefaVazia")
         mensagemDeErro.style.display = "none"
-}
     })
 }
 
