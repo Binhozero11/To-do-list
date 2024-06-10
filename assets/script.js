@@ -54,6 +54,7 @@ window.addEventListener('resize', () => {
 form.addEventListener("submit", (e) => {
     e.preventDefault()
     addTasks()
+    inputElement.value = ''
 })
 
 function textoExisteNaLista() {
@@ -79,7 +80,6 @@ function animacaoTextoJaExistente() {
     const animationbuttonForm = document.querySelector("form div button")
     const mensagemDeErro = document.getElementById("mensagemErro")
 
-
     animationbuttonForm.classList.add("tarefaVazia")
     mensagemDeErro.style.display = "block"
 
@@ -89,22 +89,19 @@ function animacaoTextoJaExistente() {
     })
 }
 
+
 function addTasks() {
+    if(inputElement.value === '') {
+        animacaoDoBotao()
+        return false;
+    }
+
     if (inputElement.value.startsWith(' ')) {
         return;
     }
 
     if (textoExisteNaLista() === true) {
         animacaoTextoJaExistente()
-        return;
-    }
-
-    // if(buttonElement.onclick && inputElement.value === '') {
-    //     console.log('0pa');
-    // } PISTA!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    
-    if(inputElement.value === '') {
-        animacaoDoBotao()
         return false;
     }
 
@@ -122,10 +119,8 @@ function addTasks() {
         })
 
     salvarDados();
-    inputElement.value = ''
+    
 }
-
-buttonElement.onclick = addTasks;
 
 function deletarTarefa(posicao) {
     const li = document.querySelectorAll("ul li")[posicao];
