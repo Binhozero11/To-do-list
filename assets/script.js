@@ -47,20 +47,6 @@ function renderTarefas() {
 
 renderTarefas()
 
-window.addEventListener('resize', (e) => {
-    if (e.target.innerWidth = 1200) {
-        renderTarefas()
-        return
-    }
-    if (e.target.innerWidth = 768) {
-        renderTarefas()
-        return
-    }if (e.target.innerWidth = 480) {
-        renderTarefas()
-        return
-    }
-})
-
 form.addEventListener("submit", (e) => {
     e.preventDefault()
     addTasks()
